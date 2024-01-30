@@ -1,0 +1,85 @@
+body{
+    background-color: #17232E;
+    margin: auto 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #17232E
+    z-index: 10000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+nav li, nav p {
+    flex: 1;
+    text-align: center;
+    font-size: 12px;
+}
+
+nav li{
+    max-width: 200px;
+}
+
+ul{
+    max-width: 800px;
+}
+nav a, nav p {
+    display: block;
+    padding: 12px 0px;
+    color: white;
+    transition: 0.3s;
+    margin: 0;
+    background-color: #17232E;
+}
+
+nav a:hover, nav p:hover, .dropdown-content a:hover{
+    background-color: #0092B3;
+}
+
+li, a, p, ul{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+img{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+}
+
+.caption{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.portfolio > a{
+    font-size: 20px;
+}
