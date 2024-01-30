@@ -10,22 +10,34 @@
         <ul>
             <li><a href="../index.html">HOME</a></li>
             <li><a href="index.html">PORTFOLIO</a></li>
-            <li><a href="https://linktr.ee/proposalresearch">STUDENTS</a></li>
+            <li><a href="https://linktr.ee/mediaartsstudio">STUDENTS</a></li>
             <li><a href="../connect.html">CONNECT</a></li>
         </ul>
     </nav>
 
     </div>
     <div class="content">
-        <img src="../media/publicenemy.jpg" alt="Student artists installing a piece.">
+        <picture>
+            <!-- WebP image source -->
+            <source srcset="../media/sst23PublicEnemyBjorgvinAreyaMya/image.webp" alt="Student artists installing a piece'." type="image/webp">
+            
+            <!-- JPEG fallback image source -->
+            <img src="../media/sst23PublicEnemyBjorgvinAreyaMya/image.jpg" alt="Student artists installing a piece'.">
+        </picture>
         <p class="caption">Student artists installing a piece.</p>
         <h1  style="text-align:center;">CHECK OUT OUR STUFF!</h1>
-        <p>For over 20 years, the Media Arts studio has created student-driven artwork that is cool and rad and cool. Sorted below by show.</p>
+        <p>For over 20 years, the Media Arts studio has created innovative, student-driven artwork.</p>
         <ul class="portfolio">
+            <a href="roughcuts/index.html">ROUGH CUTS</a>
+            <p>Video collages exploring emotion, experience, and Texas life.</p>
+            <a href="shortnarratives/disturbance/index.html">DISTURBANCE OF A PHONE</a>
+            <p>Part of the 2023 Short Narratives project.</p>
+            <a href="shortnarratives/dunkin/index.html">DUNKIN'</a>
+            <p>A boy is driven to dunk. Part of the 2023 Short Narratives project.</p>
             <a href="sst2023/index.html">STORIES SELDOM TOLD 2023: USER INTERFACE</a>
             <p>Exploring the social impact of the War on Drugs.</p>
             <a href="https://vimeo.com/781628308">SPIRAL</a>
-            <p>The high school Media Arts Studio's 2023 short narrative project.</p>
+            <p>The high school Media Arts Studio's 2022 short narrative project.</p>
             <a href="yanaguana/index.html">WE ARE YANAGUANA</a>
             <p>Telling the story of an alternate San Antonio.</p>
 
@@ -35,7 +47,16 @@
     </div>
 
     <div class="footer">
-        <p>© 2023 SAY Sí</p>
+        <p id="copyright"></p>
     </div>
+    
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+    
+        // Update the copyright notice
+        const copyrightElement = document.getElementById('copyright');
+        copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
+    </script>
 </body>
 </html>

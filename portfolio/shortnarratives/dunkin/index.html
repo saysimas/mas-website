@@ -8,18 +8,18 @@
 
     <nav>
         <ul>
-            <li><a href="../../index.html">HOME</a></li>
-            <li><a href="../index.html">PORTFOLIO</a></li>
-            <li><a href="https://linktr.ee/proposalresearch">STUDENTS</a></li>
+            <li><a href="../../../index.html">HOME</a></li>
+            <li><a href="../../index.html">PORTFOLIO</a></li>
+            <li><a href="https://linktr.ee/mediaartsstudio">STUDENTS</a></li>
             <li><a href="../../connect.html">CONNECT</a></li>
         </ul>
     </nav>
 
     </div>
     <div class="content">
-        <img src="../../../media/dunkinday2-19.jpg" alt="Students filming a scene in Dunkin'.">
-        <p class="caption">Students at MLK Park filming a scene.</p>
-        <h1  style="text-align:center;">THIS GUY CAN DO IT</h1>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/895052680?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="DUNKIN'"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+ 
+        <h1  style="text-align:center;">NAH, THIS GUY... HE CAN DO IT</h1>
         <p><i>DUNKIN'</i> is the story of a boy.</p>
         <p>
             <b>DIRECTOR:</b> Soly Gutierrez<br>
@@ -27,19 +27,39 @@
             <b>DIRECTOR OF PHOTOGRAPHY:</b> Vincent Salinas<br>
             <b>ASSISTANT CAMERA:</b> Grey Jackson<br>
             <b>SLATE:</b> Tristyn Myrick<br>
-            <b>SOUND:</b> Estevan Garcia<br>
             <b>SOUND:</b> Jenna Mata<br>
-            <b>PRODUCTION DESIGN:</b> Izzy Hernandez<br>
+            <b>SOUND:</b> Justin Castro<br>
+            <b>SOUND:</b> Estevan Garcia<br>
+            <b>EDITOR:</b> Tristyn Myrick<br>
             <b>WARDROBE:</b> Charlize Guzman<br>
+            <b>PRODUCTION DESIGN:</b> Izzy Hernandez<br>
             <b>PRODUCER:</b> Alex Ramirez<br>
             <b>PRODUCER:</b> Ashley Lopez<br>
             <b>PRODUCER:</b> Reese Ferguson<br>
         </p>
 
+        <picture>
+            <!-- WebP image source -->
+            <source srcset="../../../media/dunkinVincentFilmingOllie/image.webp" alt="Students filming a scene in Dunkin'." type="image/webp">
+            
+            <!-- JPEG fallback image source -->
+            <img src="../../../media/dunkinVincentFilmingOllie/image.jpg" alt="Students filming a scene in Dunkin'.">
+        </picture>
+        <p class="caption">Students at MLK Park filming a scene.</p>
+
     </div>
 
     <div class="footer">
-        <p>© 2023 SAY Sí</p>
+        <p id="copyright"></p>
     </div>
+    
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+    
+        // Update the copyright notice
+        const copyrightElement = document.getElementById('copyright');
+        copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
+    </script>
 </body>
 </html>

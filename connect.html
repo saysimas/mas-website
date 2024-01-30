@@ -10,7 +10,7 @@
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="portfolio/index.html">PORTFOLIO</a></li>
-            <li><a href="students.html">STUDENTS</a></li>
+            <li><a href="https://linktr.ee/mediaartsstudio">STUDENTS</a></li>
             <li><a href="connect.html">CONNECT</a></li>
         </ul>
     </nav>
@@ -35,8 +35,17 @@
     
         </div>
 
-    <div class="footer">
-        <p>© 2023 SAY Sí</p>
-    </div>
+        <div class="footer">
+            <p id="copyright"></p>
+        </div>
+        
+        <script>
+            // Get the current year
+            const currentYear = new Date().getFullYear();
+        
+            // Update the copyright notice
+            const copyrightElement = document.getElementById('copyright');
+            copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
+        </script>
 </body>
 </html>
