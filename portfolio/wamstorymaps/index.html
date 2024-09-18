@@ -2,13 +2,10 @@
 <html>
 <head>
   <title>San Antonio Story Map</title>
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
-    /* Set the map height */
     #map { height: 100vh; }
 
-    /* Custom popup styles */
     .custom-popup .leaflet-popup-content-wrapper {
       width: 600px !important;
       max-width: none !important;
@@ -19,10 +16,9 @@
       max-width: none !important;
     }
 
-    /* Video container styling */
     .video-container {
       position: relative;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
       width: 560px;
@@ -36,7 +32,7 @@
       height: 100%;
     }
 
-    /* Responsive adjustments */
+    /* will eventually become fancier */
     @media (max-width: 600px) {
       .custom-popup .leaflet-popup-content-wrapper,
       .custom-popup .leaflet-popup-content {
@@ -49,10 +45,8 @@
 
 <div id="map"></div>
 
-<!-- Leaflet JavaScript -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- Your custom JavaScript file -->
-<script src="app.js"></script>
+<script src="patches.js"></script>
 
 </body>
 </html>
