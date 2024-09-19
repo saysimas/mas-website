@@ -1,52 +1,97 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>San Antonio Story Map</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <style>
-    #map { height: 100vh; }
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://mas.saysi.org/css/style.css">
+    <style>
+        #map {
+          
+        }
+    
+        .custom-popup .leaflet-popup-content-wrapper {
+          width: 600px !important;
+          max-width: none !important;
+        }
+    
+        .custom-popup .leaflet-popup-content {
+          width: 600px !important;
+          max-width: none !important;
+        }
+    
+        .video-container {
+          position: relative;
+          padding-bottom: 56.25%;
+          height: 0;
+          overflow: hidden;
+          width: 560px;
+        }
+    
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
 
-    .custom-popup .leaflet-popup-content-wrapper {
-      width: 600px !important;
-      max-width: none !important;
-    }
-
-    .custom-popup .leaflet-popup-content {
-      width: 600px !important;
-      max-width: none !important;
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      width: 560px;
-    }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* will eventually become fancier */
-    @media (max-width: 600px) {
-      .custom-popup .leaflet-popup-content-wrapper,
-      .custom-popup .leaflet-popup-content {
-        width: 90% !important;
-      }
-    }
-  </style>
+        /* enwiden content but only for this page */
+        .content {
+            max-width: 1200px;
+        }
+    
+        /* will eventually become fancier */
+        @media (max-width: 600px) {
+          .custom-popup .leaflet-popup-content-wrapper,
+          .custom-popup .leaflet-popup-content {
+            width: 90% !important;
+          }
+        }
+      </style>
 </head>
 <body>
 
-<div id="map"></div>
+    <nav>
+        <ul>
+            <li><a href="https://mas.saysi.org/">HOME</a></li>
+            <li><a href="https://mas.saysi.org/portfolio">PORTFOLIO</a></li>
+            <li><a href="https://linktr.ee/mediaartsstudio">STUDENTS</a></li>
+            <li><a href="https://mas.saysi.org/connect">CONNECT</a></li>
+        </ul>
+    </nav>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="patches.js"></script>
+    </div>
+    <div class="content">
+        <div style="padding:56.25% 0 0 0;position:relative;" id="map"></div>
+        
+        <div style="max-width: 800px; text-align:center; margin: auto;">
+            <h1  style="text-align:center;">UNTITLED MAS WAM STORIES PROJECT</h1>
+            <p>In our first unit of the year, students were asked about the stories that connect them to the city of San Antonio. Each student wrote, produced, and edited their own visual retelling of a short story important to them. Click any of the pins to hear a story from one of our WAM students!</p>
+            <p>
+                Produced by the Media Arts WAM students.<br><br>
+                <b>WAM MENTOR:</b> Maddie Moran<br>
+                <b>WAM MENTOR:</b> Soly Gutierrez<br><br>
+                <b>PRODUCER:</b> Alex Ramirez<br>
+                <b>PRODUCER:</b> Reese Ferguson<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p id="copyright"></p>
+    </div>
+    
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+    
+        // Update the copyright notice
+        const copyrightElement = document.getElementById('copyright');
+        copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
+    </script>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="patches.js"></script>
 
 </body>
 </html>
