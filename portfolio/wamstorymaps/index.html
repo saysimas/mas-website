@@ -5,9 +5,21 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://mas.saysi.org/css/style.css">
     <style>
-        #map {
-          
-        }
+        
+        .credits ul {
+  columns: 2; /* Splits the list into two columns */
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes padding around the list */
+  max-width: 400px;
+  margin: auto;
+}
+
+.credits li {
+  margin-bottom: 1px; /* Adds space between names */
+}
+
     
         .custom-popup .leaflet-popup-content-wrapper {
           width: 600px !important;
@@ -68,13 +80,48 @@
 
     </div>
     <div class="content">
-        <div style="padding:56.25% 0 0 0;position:relative;" id="map"></div>
+        <div style="padding:56.25% 0 0 0;position:relative;" id="map" fetchpriority="high"></div>
         
         <div style="max-width: 800px; text-align:center; margin: auto;">
             <h1  style="text-align:center;">UNTITLED MAS WAM STORIES PROJECT</h1>
             <p>In our first unit of the year, students were asked about the stories that connect them to the city of San Antonio. Each student wrote, produced, and edited their own visual retelling of a short story important to them. Click any of the pins to hear a story from one of our WAM students!</p>
             <p>
-                Produced by the Media Arts WAM students.<br><br>
+              <b>Produced by the Media Arts WAM students.</b>
+            </p>
+
+            <div class="credits">
+              <ul>
+                <li>Amira Cole</li>
+                <li>Athena Vasquez</li>
+                <li>Brandon Allen</li>
+                <li>Camila Castillo</li>
+                <li>Deway’nae Ward</li>
+                <li>Dylan Muniz</li>
+                <li>Ember Sada</li>
+                <li>Emerson Courtney</li>
+                <li>Emerson Ponce</li>
+                <li>Hero Puente</li>
+                <li>Jacob Vasquez</li>
+                <li>Joaquin Arellano</li>
+                <li>Lauri De Leon Morado</li>
+                <li>Liam Sada</li>
+                <li>London Rangel</li>
+                <li>Lucian DeStefano</li>
+                <li>Luz Abbenante</li>
+                <li>Mia Sotello</li>
+                <li>Percy Cardona</li>
+                <li>Remy Moran</li>
+                <li>Renzo Moran</li>
+                <li>Rihanna Ramirez</li>
+                <li>Ruby DesRoches</li>
+                <li>Tsunami Huerta</li>
+                <li>Vincent Sanchez</li>
+                <li>Zoey Morado</li>
+              </ul>
+            </div>
+                        
+
+            <p>
                 <b>WAM MENTOR:</b> Maddie Moran<br>
                 <b>WAM MENTOR:</b> Soly Gutierrez<br><br>
                 <b>PRODUCER:</b> Alex Ramirez<br>
@@ -83,10 +130,16 @@
         </div>
 
         <div>
-          <picture>
+          <picture fetchpriority="low">
             <source srcset="/media/portfolio/wamstorymaps/london/london_1200w.jpg" media="(min-width: 1200px)">
             <source srcset="/media/portfolio/wamstorymaps/london/london_768w.jpg" media="(min-width: 768px)">
-            <img src="/media/portfolio/wamstorymaps/london/london_480w.jpg" alt="Story map of London">
+            <img src="/media/portfolio/wamstorymaps/london/london_480w.jpg" alt="A student places a sticky note on a projected map of San Antonio.">
+          </picture>
+
+          <picture fetchpriority="low">
+            <source srcset="/media/portfolio/wamstorymaps/filming/filming_1200w.jpg" media="(min-width: 1200px)">
+            <source srcset="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" media="(min-width: 768px)">
+            <img src="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" alt="Students film in front of a green screen, seated on a bean bag.">
           </picture>
           
         </div>
