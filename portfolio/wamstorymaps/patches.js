@@ -36,19 +36,9 @@ var locations = [
     title: 'Dunkin\''
   },
   {
-    coords: [29.3812569, -98.5727526],
-    videoId: '901646295',
-    title: 'A Walk In Time'
-  },
-  {
-    coords: [29.4190824, -98.4835734],
-    videoId: '783144698',
-    title: 'Towerfall'
-  },
-  {
-    coords: [29.4586699, -98.4776784],
-    videoId: '786012361',
-    title: 'Prosperity of Tomorrow'
+    coords: [29.428470, -98.491480],
+    videoId: '1017699290',
+    title: 'Remy Temp'
   }
 ];
 
