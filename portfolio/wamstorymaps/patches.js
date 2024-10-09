@@ -31,15 +31,36 @@ var customPopupOptions = {
 // locations array
 var locations = [
   {
-    coords: [29.416656, -98.519357],
-    videoId: '895052680',
-    title: 'Dunkin\''
-  },
+    coords: [29.427610, -98.498932],
+    videoId: '-',
+    title: 'Fun with Dogs'
+  }, // ATHENA
   {
-    coords: [29.428470, -98.491480],
+    coords: [29.417740, -98.516890],
+    videoId: '-',
+    title: 'Chicken Fight'
+  }, // DEWAYNAE
+  {
+    coords: [29.364519, -98.228531],
+    videoId: '-',
+    title: 'Puppy Rescuers'
+  }, // EMBER
+  {
+    coords: [29.599115, -98.610558],
+    videoId: '-',
+    title: 'Puppy Rescuers'
+  }, // LIAM
+  {
+    coords: [29.413871, -98.514753],
     videoId: '1017699290',
-    title: 'Remy Temp'
-  }
+    title: 'Brutally Raiding Fathead\'s Pizza'
+  }, // REMY
+  {
+    coords: [29.259178, -98.453688],
+    videoId: '-',
+    title: 'McAllen Flood'
+  } // ZOEY
+  
 ];
 
 locations.forEach(function(location) {
