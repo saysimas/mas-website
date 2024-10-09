@@ -36,12 +36,12 @@ var locations = [
     title: 'Fun with Dogs'
   }, // ATHENA
   {
-    coords: [29.417740, -98.516890],
+    coords: [29.364519, -98.228531],
     videoId: '-',
     title: 'Chicken Fight'
   }, // DEWAYNAE
   {
-    coords: [29.364519, -98.228531],
+    coords: [29.417740, -98.516890],
     videoId: '-',
     title: 'Puppy Rescuers'
   }, // EMBER
