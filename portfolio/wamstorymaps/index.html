@@ -6,6 +6,26 @@
     <link rel="stylesheet" href="https://mas.saysi.org/css/style.css">
     <style>
         
+/* Basic styling for the gallery */
+.image-gallery {
+  display: grid;
+  gap: 20px; /* Adjust the gap between images */
+  grid-template-columns: 1fr; /* Default is 1 column (for mobile) */
+}
+
+/* For devices with a minimum width of 768px (typically tablets and above) */
+@media screen and (min-width: 1000px) {
+  .image-gallery {
+    grid-template-columns: 1fr 1fr; /* Two images per row for larger screens */
+  }
+}
+
+picture img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Keep the image aspect ratio */
+}
+
+
         .credits{
           margin: auto;
         }
@@ -131,7 +151,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="image-gallery">
           <picture fetchpriority="low">
             <source srcset="/media/portfolio/wamstorymaps/london/london_1200w.jpg" media="(min-width: 1200px)">
             <source srcset="/media/portfolio/wamstorymaps/london/london_768w.jpg" media="(min-width: 768px)">
