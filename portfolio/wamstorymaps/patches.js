@@ -48,10 +48,10 @@ var locations = [
   {
     coords: [29.599115, -98.610558],
     videoId: '-',
-    title: 'Puppy Rescuers'
+    title: 'A Day at Six Flags'
   }, // LIAM
   {
-    coords: [29.413871, -98.514753],
+    coords: [29.4285578, -98.4915416],
     videoId: '1017699290',
     title: 'Brutally Raiding Fathead\'s Pizza'
   }, // REMY
