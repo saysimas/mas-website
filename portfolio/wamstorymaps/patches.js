@@ -8,11 +8,10 @@ var map = L.map('map', {
   minZoom: 11,
   maxZoom: 18,
   maxBounds: bounds,
-  maxBoundsViscosity: 1.0,
-  zoomControl: false
+  maxBoundsViscosity: 1.0
 });
 
-// tilelayer for OpenStreetMap
+// Tile layer for OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
@@ -26,7 +25,6 @@ var customPopupOptions = {
   minWidth: 600,
   keepInView: true
 };
-
 // locations array
 var locations = [
   {
@@ -101,6 +99,7 @@ var locations = [
   } // VINCENT
 ];
 
+// Add markers and popups
 locations.forEach(function(location) {
   var marker = L.marker(location.coords).addTo(map);
   var iframe = '<iframe src="https://player.vimeo.com/video/' + location.videoId + '" ' +

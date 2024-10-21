@@ -1,96 +1,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>SAN ANTONIO STORY MAP</title>
+    <meta name="description" content="Explore stories from San Antonio through our students' visual retellings. Click on any map pin to hear their unique stories.">
+  <meta name="keywords" content="SAY Si, San Antonio, Story Maps, Media Arts, WAM, Student Projects">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://mas.saysi.org/css/style.css">
     <style>
-        
-/* Basic styling for the gallery */
-.image-gallery {
-  display: grid;
-  gap: 20px; /* Adjust the gap between images */
-  grid-template-columns: 1fr; /* Default is 1 column (for mobile) */
-}
-
-/* For devices with a minimum width of 768px (typically tablets and above) */
-@media screen and (min-width: 1000px) {
-  .image-gallery {
-    grid-template-columns: 1fr 1fr; /* Two images per row for larger screens */
-  }
-}
-
-picture img {
-  width: 100%; /* Ensure the image fills its container */
-  height: auto; /* Keep the image aspect ratio */
-}
-
-
-        .credits{
-          margin: auto;
+        .image-gallery {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
         }
+
+        @media screen and (min-width: 1000px) {
+            .image-gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        picture img {
+            width: 100%;
+            height: auto;
+        }
+
+        .credits {
+            margin: auto;
+        }
+
         .credits ul {
-  columns: 2; /* Splits the list into two columns */
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  list-style-type: none; /* Removes bullet points */
-  padding: 0; /* Removes padding around the list */
-  margin: auto;
-}
-
-.credits li {
-  margin-bottom: 1px; /* Adds space between names */
-}
-
-    
-        .custom-popup .leaflet-popup-content-wrapper {
-          width: 600px !important;
-          max-width: none !important;
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            list-style-type: none;
+            padding: 0;
+            margin: auto;
         }
-    
+
+        .credits li {
+            margin-bottom: 1px;
+        }
+
+        .custom-popup .leaflet-popup-content-wrapper,
         .custom-popup .leaflet-popup-content {
-          width: 600px !important;
-          max-width: none !important;
-        }
-    
-        .video-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0;
-          overflow: hidden;
-          width: 560px;
-        }
-    
-        .video-container iframe {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+            width: 600px !important;
+            max-width: none !important;
         }
 
-        /* enwiden content but only for this page */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            width: 560px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .content {
             max-width: 1200px;
         }
-    
-        /* will eventually become fancier */
+
         @media (max-width: 600px) {
-          .custom-popup .leaflet-popup-content-wrapper,
-          .custom-popup .leaflet-popup-content {
-            width: 90% !important;
-          }
+            .custom-popup .leaflet-popup-content-wrapper,
+            .custom-popup .leaflet-popup-content {
+                width: 90% !important;
+            }
         }
 
         @media (max-width: 1000px) {
-          #map {
-            min-height: 30vh;
-          }
+            #map {
+                min-height: 30vh;
+            }
         }
-      </style>
+    </style>
 </head>
 <body>
-
     <nav>
         <ul>
             <li><a href="https://mas.saysi.org/">HOME</a></li>
@@ -100,48 +91,44 @@ picture img {
         </ul>
     </nav>
 
-    </div>
     <div class="content">
         <div style="padding:56.25% 0 0 0;position:relative;" id="map" fetchpriority="high"></div>
         
         <div style="max-width: 800px; text-align:center; margin: auto;">
-            <h1  style="text-align:center;">UNTITLED MAS WAM STORIES PROJECT</h1>
+            <h1 style="text-align:center;">SAN ANTONIO STORY MAPS</h1>
             <p>In our first unit of the year, students were asked about the stories that connect them to the city of San Antonio. Each student wrote, produced, and edited their own visual retelling of a short story important to them. Click any of the pins to hear a story from one of our WAM students!</p>
-            <p>
-              <b>Produced by the Media Arts WAM students.</b>
-            </p>
+            <p><b>Produced by the Media Arts WAM students.</b></p>
 
-            <div class="credits" style="max-width: 400px;"">
-              <ul>
-                <li>Amira Cole</li>
-                <li>Athena Vasquez</li>
-                <li>Brandon Allen</li>
-                <li>Camila Castillo</li>
-                <li>Deway’nae Ward</li>
-                <li>Dylan Muniz</li>
-                <li>Ember Sada</li>
-                <li>Emerson Courtney</li>
-                <li>Emerson Ponce</li>
-                <li>Hero Puente</li>
-                <li>Jacob Vasquez</li>
-                <li>Joaquin Arellano</li>
-                <li>Lauri De Leon Morado</li>
-                <li>Liam Sada</li>
-                <li>London Rangel</li>
-                <li>Lucian DeStefano</li>
-                <li>Luz Abbenante</li>
-                <li>Mia Sotello</li>
-                <li>Percy Cardona</li>
-                <li>Remy Moran</li>
-                <li>Renzo Moran</li>
-                <li>Rihanna Ramirez</li>
-                <li>Ruby DesRoches</li>
-                <li>Tsunami Huerta</li>
-                <li>Vincent Sanchez</li>
-                <li>Zoey Morado</li>
-              </ul>
+            <div class="credits" style="max-width: 400px;">
+                <ul>
+                    <li>Amira Cole</li>
+                    <li>Athena Vasquez</li>
+                    <li>Brandon Allen</li>
+                    <li>Camila Castillo</li>
+                    <li>Deway’nae Ward</li>
+                    <li>Dylan Muniz</li>
+                    <li>Ember Sada</li>
+                    <li>Emerson Courtney</li>
+                    <li>Emerson Ponce</li>
+                    <li>Hero Puente</li>
+                    <li>Jacob Vasquez</li>
+                    <li>Joaquin Arellano</li>
+                    <li>Lauri De Leon Morado</li>
+                    <li>Liam Sada</li>
+                    <li>London Rangel</li>
+                    <li>Lucian DeStefano</li>
+                    <li>Luz Abbenante</li>
+                    <li>Mia Sotello</li>
+                    <li>Percy Cardona</li>
+                    <li>Remy Moran</li>
+                    <li>Renzo Moran</li>
+                    <li>Rihanna Ramirez</li>
+                    <li>Ruby DesRoches</li>
+                    <li>Tsunami Huerta</li>
+                    <li>Vincent Sanchez</li>
+                    <li>Zoey Morado</li>
+                </ul>
             </div>
-                        
 
             <p>
                 <b>WAM MENTOR:</b> Maddie Moran<br>
@@ -152,18 +139,17 @@ picture img {
         </div>
 
         <div class="image-gallery">
-          <picture fetchpriority="low">
-            <source srcset="/media/portfolio/wamstorymaps/london/london_1200w.jpg" media="(min-width: 1200px)">
-            <source srcset="/media/portfolio/wamstorymaps/london/london_768w.jpg" media="(min-width: 768px)">
-            <img src="/media/portfolio/wamstorymaps/london/london_480w.jpg" alt="A student places a sticky note on a projected map of San Antonio.">
-          </picture>
+            <picture fetchpriority="low" loading="lazy">
+                <source srcset="/media/portfolio/wamstorymaps/london/london_1200w.jpg" media="(min-width: 1200px)">
+                <source srcset="/media/portfolio/wamstorymaps/london/london_768w.jpg" media="(min-width: 768px)">
+                <img src="/media/portfolio/wamstorymaps/london/london_480w.jpg" loading="lazy" alt="A student places a sticky note on a projected map of San Antonio.">
+            </picture>
 
-          <picture fetchpriority="low">
-            <source srcset="/media/portfolio/wamstorymaps/filming/filming_1200w.jpg" media="(min-width: 1200px)">
-            <source srcset="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" media="(min-width: 768px)">
-            <img src="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" alt="Students film in front of a green screen, seated on a bean bag.">
-          </picture>
-          
+            <picture fetchpriority="low" loading="lazy">
+                <source srcset="/media/portfolio/wamstorymaps/filming/filming_1200w.jpg" media="(min-width: 1200px)">
+                <source srcset="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" media="(min-width: 768px)">
+                <img src="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" loading="lazy" alt="Students film in front of a green screen, seated on a bean bag.">
+            </picture>
         </div>
     </div>
 
@@ -172,16 +158,12 @@ picture img {
     </div>
     
     <script>
-        // Get the current year
         const currentYear = new Date().getFullYear();
-    
-        // Update the copyright notice
         const copyrightElement = document.getElementById('copyright');
         copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
     </script>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="patches.js"></script>
-
 </body>
 </html>
