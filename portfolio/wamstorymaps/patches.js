@@ -65,11 +65,11 @@ var locations = [
     videoId: '-',
     title: '-'
   }, // PERCY
-  {
+  /* {
     coords: [-],
     videoId: '-',
     title: 'Corn Dog Seed'
-  }, // EMERSON P
+  }, // EMERSON P */
   {
     coords: [29.398300, -98.476950],
     videoId: '-',
