@@ -3,8 +3,8 @@ var northEast = L.latLng(29.653232, -98.200);
 var bounds = L.latLngBounds(southWest, northEast);
 
 var map = L.map('map', {
-  center: [29.423870, -98.489750], // centered on the cvs on commerce, arbitrarily
-  zoom: 12,
+  center: [29.423870, -98.489750], // centered arbitrarily
+  zoom: 12, // initial zoom, but will be overridden
   minZoom: 11,
   maxZoom: 18,
   maxBounds: bounds,
@@ -12,14 +12,13 @@ var map = L.map('map', {
   zoomControl: false
 });
 
-L.control.zoom({
-  position: 'bottomright'
-}).addTo(map);
-
-// tilelayer for openstreetmap
+// tilelayer for OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
+}).addTo(map);
+
+// Use fitBounds to zoom out to the maximum level within the defined bounds
+map.fitBounds(bounds);
 
 var customPopupOptions = {
   className: 'custom-popup',
