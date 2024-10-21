@@ -59,8 +59,47 @@ var locations = [
     coords: [29.259178, -98.453688],
     videoId: '-',
     title: 'McAllen Flood'
-  } // ZOEY
-  
+  }, // ZOEY
+  {
+    coords: [29.419980, -98.487830],
+    videoId: '-',
+    title: '-'
+  }, // PERCY
+  {
+    coords: [-],
+    videoId: '-',
+    title: 'Corn Dog Seed'
+  }, // EMERSON P
+  {
+    coords: [29.398300, -98.476950],
+    videoId: '-',
+    title: 'The One-Act Play'
+  }, // BRANDON
+  {
+    coords: [29.518080, -98.497963],
+    videoId: '-',
+    title: '-'
+  }, // CAMILA
+  {
+    coords: [29.527941, -98.472801],
+    videoId: '-',
+    title: 'That One Time I Went To California, Yippie!'
+  }, // LUCIAN
+  {
+    coords: [29.458450, -98.534210],
+    videoId: '-',
+    title: 'School'
+  }, // RUBY
+  {
+    coords: [29.3536752, -98.2960592],
+    videoId: '-',
+    title: 'That One Play I Did'
+  }, // EMERSON C
+  {
+    coords: [29.4249518, -98.48836],
+    videoId: '-',
+    title: 'Ow, My Eye!'
+  } // VINCENT
 ];
 
 locations.forEach(function(location) {
