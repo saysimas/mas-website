@@ -20,13 +20,11 @@
 
     </div>
     <div class="content">
-        <picture>
-            <!-- WebP image source -->
-            <source srcset="https://mas.saysi.org/media/soly-anthony-super8/image.webp" alt="Students in the Media Arts program cutting Super 8 film." type="image/webp">
-            
-            <!-- JPEG fallback image source -->
-            <img src="https://mas.saysi.org/media/soly-anthony-super8/image.jpg" alt="Students in the Media Arts program cutting Super 8 film.">
-        </picture>
+        <picture fetchpriority="low" loading="lazy">
+            <source srcset="https://mas.saysi.org/media/solyAnthonySuper8_1200w.jpg" media="(min-width: 1200px)">
+            <source srcset="https://mas.saysi.org/media/solyAnthonySuper8_768w.jpg" media="(min-width: 768px)">
+            <img src="https://mas.saysi.org/media/solyAnthonySuper8_480w.jpg" loading="lazy" alt="A student places a sticky note on a projected map of San Antonio.">
+          </picture>
 
           
         <p class="caption">Students in the Media Arts program cutting Super 8 film.</p>
