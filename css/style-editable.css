@@ -1,6 +1,7 @@
-body{
+body {
     background-color: #17232E;
     margin: auto 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 nav {
@@ -8,7 +9,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #17232E
+    background-color: #17232E;
     z-index: 10000;
 }
 
@@ -20,66 +21,53 @@ nav ul {
     margin-left: auto;
 }
 
-nav li, nav p {
-    flex: 1;
-    text-align: center;
+nav li, nav p, .caption, .footer {
     font-size: 12px;
+    text-align: center;
 }
 
-nav li{
+nav li {
     max-width: 200px;
+    flex: 1;
 }
 
-ul{
+ul, .content {
     max-width: 800px;
 }
+
 nav a, nav p {
     display: block;
-    padding: 12px 0px;
+    padding: 12px 0;
     color: white;
     transition: 0.3s;
     margin: 0;
-    background-color: #17232E;
 }
 
-nav a:hover, nav p:hover, .dropdown-content a:hover{
+nav a:hover, nav p:hover, .dropdown-content a:hover {
     background-color: #0092B3;
 }
 
-li, a, p, ul, h1, h2{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.content{
+.content {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px;
     padding: 10px 20px;
     background-color: white;
 }
 
-img{
+img {
     width: 100%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:10px;
-}
-
-.caption{
-    font-size: 12px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10px;
 }
 
-.footer{
-    background-color: #292929;
+.footer {
+    background-color: #0f0f0f;
     color: white;
-    text-align: center;
     padding: 10px;
-    font-size: 12px;
 }
 
-.portfolio > a{
+.portfolio > a {
     font-size: 20px;
 }
