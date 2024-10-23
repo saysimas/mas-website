@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <!-- Link to the updated CSS file -->
     <link rel="stylesheet" href="https://mas.saysi.org/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Website for youth advocacy media arts group at SAY Si, with a focus on youth voice, social justice, and do-it-yourself film and photography.">
@@ -18,38 +19,39 @@
         </ul>
     </nav>
 
-    </div>
+    <!-- Removed unnecessary closing </div> tag -->
+
     <div class="content">
         <picture fetchpriority="high" style="aspect-ratio: 3 / 2">
             <source srcset="https://mas.saysi.org/media/solyAnthonySuper8/solyAnthonySuper8_1200w.jpg" media="(min-width: 1200px)">
             <source srcset="https://mas.saysi.org/media/solyAnthonySuper8/solyAnthonySuper8_768w.jpg" media="(min-width: 768px)">
-            <img src="https://mas.saysi.org/media/solyAnthonySuper8/solyAnthonySuper8_480w.jpg" loading="lazy" alt="A student places a sticky note on a projected map of San Antonio.">
-          </picture>
+            <img src="https://mas.saysi.org/media/solyAnthonySuper8/solyAnthonySuper8_480w.jpg" loading="lazy" alt="Students cutting Super 8 film.">
+        </picture>
 
-          
         <p class="caption">Students in the Media Arts program cutting Super 8 film.</p>
-        <h1  style="text-align:center;">MEDIA ARTS!</h1>
-        <p>   SAY Sí’s Media Arts Studio is a film, photography, and digital art based program that focuses on storytelling through digital media.</p>
-            
-        <p>   Throughout the year, MAS students, along with the help of teaching artists and professionals in the media industry, collaborate through hands-on learning experiences with video production, digital and analog photography, animation, and digital arts. In the media arts studio, students explore relevant social justice issues through research and production of fiction and non-fiction digital media content. Youth voice is an essential aspect of all SAY Sí programs.</p>
-            
-        <p>   As part of the filmmaking process students have the opportunity to utilize their talents in all phases of the production. Once their digital content is finished, the students design the accompanying promotional and marketing materials for exhibits, film festivals, and movie premieres.</p>
-    
+
+        <h1 style="text-align:center;">MEDIA ARTS!</h1>
+
+        <p>SAY Sí’s Media Arts Studio is a film, photography, and digital art-based program that focuses on storytelling through digital media.</p>
+
+        <p>Throughout the year, MAS students, along with the help of teaching artists and professionals in the media industry, collaborate through hands-on learning experiences with video production, digital and analog photography, animation, and digital arts. In the media arts studio, students explore relevant social justice issues through research and production of fiction and non-fiction digital media content. Youth voice is an essential aspect of all SAY Sí programs.</p>
+
+        <p>As part of the filmmaking process, students have the opportunity to utilize their talents in all phases of the production. Once their digital content is finished, the students design the accompanying promotional and marketing materials for exhibits, film festivals, and movie premieres.</p>
+
         <p>In addition, the MAS studio produces digital works for companies, organizations, and individuals outside SAY Sí. These commissioned projects give students the opportunity to build a professional portfolio and to develop entrepreneurship skills.</p>
     </div>
 
     <div class="footer">
         <p id="copyright"></p>
     </div>
-    
+
     <script>
         // Get the current year
         const currentYear = new Date().getFullYear();
-    
+
         // Update the copyright notice
         const copyrightElement = document.getElementById('copyright');
         copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
     </script>
 </body>
 </html>
-
