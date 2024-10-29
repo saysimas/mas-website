@@ -49,7 +49,7 @@ var locations = [
   }, // LIAM
   {
     coords: [29.4285578, -98.4915416],
-    videoId: '1017699290',
+    videoId: '-',
     title: 'Brutally Raiding Fathead\'s Pizza'
   }, // REMY
   {
@@ -69,7 +69,7 @@ var locations = [
   }, // EMERSON P */
   {
     coords: [29.398300, -98.476950],
-    videoId: '-',
+    videoId: '1024506497',
     title: 'The One-Act Play'
   }, // BRANDON
   {
@@ -84,8 +84,8 @@ var locations = [
   }, // LUCIAN
   {
     coords: [29.458450, -98.534210],
-    videoId: '-',
-    title: 'School'
+    videoId: '1024511477',
+    title: 'School Lockdown'
   }, // RUBY
   {
     coords: [29.3536752, -98.2960592],
