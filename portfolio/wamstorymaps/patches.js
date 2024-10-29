@@ -39,12 +39,12 @@ var locations = [
   }, // DEWAYNAE
   {
     coords: [29.417740, -98.516890],
-    videoId: '-',
+    videoId: '1024509882',
     title: 'Puppy Rescuers'
   }, // EMBER
   {
     coords: [29.599115, -98.610558],
-    videoId: '-',
+    videoId: '1024510840',
     title: 'A Day at Six Flags'
   }, // LIAM
   {
@@ -59,9 +59,9 @@ var locations = [
   }, // ZOEY
   {
     coords: [29.419980, -98.487830],
-    videoId: '-',
+    videoId: '1024511306',
     title: '-'
-  }, // PERCY
+  }, // LILIANA
   /* {
     coords: [-],
     videoId: '-',
@@ -79,7 +79,7 @@ var locations = [
   }, // CAMILA
   {
     coords: [29.527941, -98.472801],
-    videoId: '-',
+    videoId: '1024511085',
     title: 'That One Time I Went To California, Yippie!'
   }, // LUCIAN
   {
