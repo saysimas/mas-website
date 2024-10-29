@@ -27,7 +27,7 @@ var customPopupOptions = {
 };
 // locations array
 var locations = [
-  {
+  /*{
     coords: [29.427610, -98.498932],
     videoId: '-',
     title: 'Fun with Dogs'
@@ -37,7 +37,7 @@ var locations = [
     videoId: '-',
     title: 'Chicken Fight'
   }, // DEWAYNAE
-  {
+  */{
     coords: [29.417740, -98.516890],
     videoId: '1024509882',
     title: 'Puppy Rescuers'
@@ -47,7 +47,7 @@ var locations = [
     videoId: '1024510840',
     title: 'A Day at Six Flags'
   }, // LIAM
-  {
+  /*{
     coords: [29.4285578, -98.4915416],
     videoId: '-',
     title: 'Brutally Raiding Fathead\'s Pizza'
@@ -56,7 +56,7 @@ var locations = [
     coords: [29.259178, -98.453688],
     videoId: '-',
     title: 'McAllen Flood'
-  }, // ZOEY
+  }, // ZOEY */
   {
     coords: [29.419980, -98.487830],
     videoId: '1024511306',
@@ -71,13 +71,13 @@ var locations = [
     coords: [29.398300, -98.476950],
     videoId: '1024506497',
     title: 'The One-Act Play'
-  }, // BRANDON
+  },/* // BRANDON
   {
     coords: [29.518080, -98.497963],
     videoId: '-',
     title: '-'
   }, // CAMILA
-  {
+  */{
     coords: [29.527941, -98.472801],
     videoId: '1024511085',
     title: 'That One Time I Went To California, Yippie!'
@@ -86,7 +86,7 @@ var locations = [
     coords: [29.458450, -98.534210],
     videoId: '1024511477',
     title: 'School Lockdown'
-  }, // RUBY
+  }/*, // RUBY
   {
     coords: [29.3536752, -98.2960592],
     videoId: '-',
@@ -96,7 +96,7 @@ var locations = [
     coords: [29.4249518, -98.48836],
     videoId: '-',
     title: 'Ow, My Eye!'
-  } // VINCENT
+  }*/ // VINCENT
 ];
 
 // Add markers and popups
