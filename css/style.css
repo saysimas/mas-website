@@ -1,1 +1,50 @@
 body{visibility: visible !important;background-color:#17232E;margin:auto 0;font-family:'Courier New',Courier,monospace;}nav{position:fixed;top:0;left:0;right:0;background-color:#17232E;z-index:10000;}nav ul{list-style:none;margin:0;padding:0;display:flex;margin-left:auto;}nav li,nav p,.caption,.footer{font-size:12px;text-align:center;}nav li{max-width:200px;flex:1;}ul,.content{max-width:800px;}nav a,nav p{display:block;padding:12px 0;color:white;transition:0.3s;margin:0;}nav a:hover,nav p:hover,.dropdown-content a:hover{background-color:#0092B3;}.content{margin-top:50px;margin-left:auto;margin-right:auto;padding:10px 20px;background-color:white;}img{width:100%;margin-left:auto;margin-right:auto;margin-top:10px;}.footer{background-color:#0f0f0f;color:white;padding:10px;}.portfolio>a{font-size:20px;}
+.slideshow-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateX(100%);
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Fade in + Wipe Transition */
+.slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

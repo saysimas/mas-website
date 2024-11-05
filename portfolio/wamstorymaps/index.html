@@ -138,25 +138,22 @@
             </p>
         </div>
 
-        <div class="image-gallery">
-            <div>
-              <picture fetchpriority="low" loading="lazy">
+        <div class="slideshow-container">
+            <picture fetchpriority="low" loading="lazy" class="slide fade">
                 <source srcset="https://mas.saysi.org/media/portfolio/wamstorymaps/london/950w.jpg" media="(min-width: 950px)">
                 <source srcset="https://mas.saysi.org/media/portfolio/wamstorymaps/london/590w.jpg" media="(min-width: 590px)">
                 <img src="https://mas.saysi.org/media/portfolio/wamstorymaps/london/london_480w.jpg" loading="lazy" alt="A student places a sticky note on a projected map of San Antonio.">
-              </picture>
-              <p class="caption">A student places a sticky note on a projected map of San Antonio.</p>
-            </div>
-
-            <div>
-              <picture fetchpriority="low" loading="lazy">
+            </picture>
+            <picture fetchpriority="low" loading="lazy" class="slide fade">
                 <source srcset="/media/portfolio/wamstorymaps/filming/filming_1200w.jpg" media="(min-width: 1200px)">
                 <source srcset="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" media="(min-width: 768px)">
                 <img src="/media/portfolio/wamstorymaps/filming/filming_768w.jpg" loading="lazy" alt="Students film in front of a green screen, seated on a bean bag.">
               </picture>
-              <p class="caption">Students film in front of a green screen, seated on a bean bag.</p>
-            </div>       
-          </div>
+    
+            <!-- Navigation Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
 
     <div class="footer">
@@ -171,5 +168,6 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="patches.js"></script>
+    <script src="slideshow.js"></script>
 </body>
 </html>
