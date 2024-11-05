@@ -1,4 +1,5 @@
 body {
+    visibility: visible;
     background-color: #17232E;
     margin: auto 0;
     font-family: 'Courier New', Courier, monospace;
@@ -21,7 +22,10 @@ nav ul {
     margin-left: auto;
 }
 
-nav li, nav p, .caption, .footer {
+nav li, 
+nav p, 
+.caption, 
+.footer {
     font-size: 12px;
     text-align: center;
 }
@@ -31,11 +35,13 @@ nav li {
     flex: 1;
 }
 
-ul, .content {
+ul, 
+.content {
     max-width: 800px;
 }
 
-nav a, nav p {
+nav a, 
+nav p {
     display: block;
     padding: 12px 0;
     color: white;
@@ -43,7 +49,9 @@ nav a, nav p {
     margin: 0;
 }
 
-nav a:hover, nav p:hover, .dropdown-content a:hover {
+nav a:hover, 
+nav p:hover, 
+.dropdown-content a:hover {
     background-color: #0092B3;
 }
 
