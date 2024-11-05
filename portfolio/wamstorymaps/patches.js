@@ -1,5 +1,5 @@
-var southWest = L.latLng(29.204529, -98.800);
-var northEast = L.latLng(29.653232, -98.200);
+var southWest = L.latLng(29.104529, -98.800); // Decrease latitude by 20% of the difference
+var northEast = L.latLng(29.753232, -98.200); // Increase latitude by 20% of the difference
 var bounds = L.latLngBounds(southWest, northEast);
 
 var map = L.map('map', {
