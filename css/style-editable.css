@@ -1,5 +1,5 @@
 body {
-    visibility: visible;
+    visibility: visible !important;
     background-color: #17232E;
     margin: auto 0;
     font-family: 'Courier New', Courier, monospace;
