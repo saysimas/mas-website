@@ -2,7 +2,7 @@ body{visibility: visible !important;background-color:#17232E;margin:auto 0;font-
 * { box-sizing: border-box; }
 
 body {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100vh;
