@@ -23,13 +23,3 @@ function plusSlides(n) {
     slideIndex = (slideIndex + n + slides.length) % slides.length;
     showSlides(slideIndex);
 }
-
-// Function for automatic slide transition
-function autoSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlides(slideIndex);
-}
-
-// Initial display and automatic slideshow setup
-showSlides(slideIndex);
-autoSlideInterval = setInterval(autoSlide, 5000);
