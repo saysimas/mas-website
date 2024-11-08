@@ -1,5 +1,5 @@
-var southWest = L.latLng(29.104529, -98.800); // Decrease latitude by 20% of the difference
-var northEast = L.latLng(29.753232, -98.200); // Increase latitude by 20% of the difference
+var southWest = L.latLng(29.104529, -98.800);
+var northEast = L.latLng(29.753232, -98.200);
 var bounds = L.latLngBounds(southWest, northEast);
 
 var map = L.map('map', {
@@ -60,13 +60,13 @@ var locations = [
   {
     coords: [29.419980, -98.487830],
     videoId: '1024511306',
-    title: '-'
+    title: 'Magik Theater Experience'
   }, // LILIANA
-  /* {
-    coords: [-],
-    videoId: '-',
+  {
+    coords: [29.446880, -98.399971],
+    videoId: '1024510171',
     title: 'Corn Dog Seed'
-  }, // EMERSON P */
+  }, // EMERSON P
   {
     coords: [29.398300, -98.476950],
     videoId: '1024506497',
@@ -82,6 +82,16 @@ var locations = [
     videoId: '1024511085',
     title: 'That One Time I Went To California, Yippie!'
   }, // LUCIAN
+  {
+    coords: [29.425171, -98.494614],
+    videoId: '1024510460',
+    title: 'Christmas Night at the Riverwalk'
+  }, // JACOB
+  {
+    coords: [29.239180, -98.471451],
+    videoId: '1024510656',
+    title: 'The Time I Broke My Wrist'
+  }, // JOAQUIN
   {
     coords: [29.458450, -98.534210],
     videoId: '1024511477',
