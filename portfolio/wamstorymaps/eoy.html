@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAN ANTONIO STORY MAP</title>
+    <style>
+        body {
+            visibility: visible !important;
+            background-color: #17232E;
+            margin: auto 0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            width: 90%; /* Increased width */
+            max-width: 1200px; /* Optional max width for larger screens */
+            margin: auto;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .custom-popup .leaflet-popup-content-wrapper,
+        .custom-popup .leaflet-popup-content {
+            width: 900px !important; /* Larger popups */
+            max-width: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="map" fetchpriority="high"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Expand the bounds
+var southWest = L.latLng(28.9, -99.0); // Extended south-west corner
+var northEast = L.latLng(29.9, -98.0); // Extended north-east corner
+var bounds = L.latLngBounds(southWest, northEast);
+
+var map = L.map('map', {
+    center: [29.423870, -98.489750],
+    zoom: 12,
+    minZoom: 10, // Allow zooming out further if necessary
+    maxZoom: 18,
+    maxBounds: bounds,
+    maxBoundsViscosity: 1.0 // Keep the map within the extended bounds
+});
+
+
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        map.fitBounds(bounds);
+
+        var customPopupOptions = {
+            className: 'custom-popup',
+            maxWidth: 900,
+            minWidth: 900,
+            keepInView: true
+        };
+
+        var locations = [
+            {
+                coords: [29.417740, -98.516890],
+                videoId: '1024509882',
+                title: 'Puppy Rescuers'
+            },
+            {
+                coords: [29.599115, -98.610558],
+                videoId: '1024510840',
+                title: 'A Day at Six Flags'
+            },
+            {
+                coords: [29.419980, -98.487830],
+                videoId: '1024511306',
+                title: 'Magik Theater Experience'
+            },
+            {
+                coords: [29.446880, -98.399971],
+                videoId: '1024510171',
+                title: 'Corn Dog Seed'
+            },
+            {
+                coords: [29.398300, -98.476950],
+                videoId: '1024506497',
+                title: 'The One-Act Play'
+            },
+            {
+                coords: [29.527941, -98.472801],
+                videoId: '1024511085',
+                title: 'That One Time I Went To California, Yippie!'
+            },
+            {
+                coords: [29.425171, -98.494614],
+                videoId: '1024510460',
+                title: 'Christmas Night at the Riverwalk'
+            },
+            {
+                coords: [29.239180, -98.471451],
+                videoId: '1024510656',
+                title: 'The Time I Broke My Wrist'
+            },
+            {
+                coords: [29.458450, -98.534210],
+                videoId: '1024511477',
+                title: 'School Lockdown'
+            }
+        ];
+
+        locations.forEach(function(location) {
+            var marker = L.marker(location.coords).addTo(map);
+            var iframe = '<iframe src="https://player.vimeo.com/video/' + location.videoId + '" ' +
+                         'frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+            var popupContent = '<h3>' + location.title + '</h3>' +
+                               '<div class="video-container">' + iframe + '</div>';
+            marker.bindPopup(popupContent, customPopupOptions);
+        });
+    </script>
+</body>
+</html>
