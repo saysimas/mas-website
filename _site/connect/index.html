@@ -1,0 +1,69 @@
+<!--
+
+This is the base for the site.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONNECT | SAY SI MAS</title>
+  <meta name="description" content="Website for youth advocacy media arts group at SAY Si, with a focus on youth voice, social justice, and do-it-yourself film and photography.">
+  <link rel="preload" href="/css/style.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap" rel="stylesheet">
+  <style>
+    body { visibility: hidden; }
+  </style>
+</head>
+
+<body>
+  <!--
+
+This is the file to manage the navbar. Each item in the below list counts as
+one item in the navbar. The structure is as follows:
+
+<li> announces it's a new member of the list.
+<a href="[LINK GOES HERE]"> tells the browser where to send the user on click.
+The text between that and </a></li> is what the button says.
+</li> closes the member of the list.
+
+To add more items, add more members to the list. Editing them in this file
+will edit them across the entire website.
+
+-->
+
+<nav>
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/portfolio/">PORTFOLIO</a></li>
+        <li><a href="https://linktr.ee/mediaartsstudio">STUDENTS</a></li>
+        <li><a href="/connect">CONNECT</a></li>
+    </ul>
+</nav>
+  <div class="content">
+    <p><img src="https://lcyxg23wu9.ufs.sh/f/ADxw1Ms1e9LEuF3NfQlgxYU875OEtsiu2qhHvV91mfIRe0kK" alt="Students and staff in the Media Arts program outside of Buc-ee's."></p>
+<h1>TALK TO US!</h1>
+<h3>ALEX RAMIREZ</h3>
+<p><strong>Media Arts Studio Director</strong><br>
+alex@saysi.org<br>
+(210) 201-4352</p>
+<h3>NED MENESES</h3>
+<p><strong>Media Arts Teaching Artist</strong><br>
+ned@saysi.org</p>
+
+  </div>
+  <div class="footer">
+    <p id="copyright"></p>
+</div>
+
+<script>
+    const currentYear = new Date().getFullYear();
+    const copyrightElement = document.getElementById('copyright');
+    copyrightElement.innerHTML = `&copy; ${currentYear} SAY Sí. All rights reserved.`;
+</script>
+</body>
+</html>
