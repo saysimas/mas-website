@@ -8,7 +8,7 @@ tags:
 
 # MEDIA ARTS!
 
-SAY Sí’s Media Arts Studio is a film, photography, and digital art-based program that focuses on storytelling through digital media..
+SAY Sí’s Media Arts Studio is a film, photography, and digital art-based program that focuses on storytelling through digital media.
 
 Throughout the year, MAS students, along with the help of teaching artists and professionals in the media industry, collaborate through hands-on learning experiences with video production, digital and analog photography, animation, and digital arts. In the media arts studio, students explore relevant social justice issues through research and production of fiction and non-fiction digital media content. Youth voice is an essential aspect of all SAY Sí programs.
 
